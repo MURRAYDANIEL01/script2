@@ -1,2 +1,1 @@
-sudo -s && cd /root
-cd /xmrig/build
+cd ~/xmrig
