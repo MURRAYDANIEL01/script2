@@ -4,8 +4,6 @@ sudo apt --yes --force-yes install libmicrohttpd-dev libssl-dev cmake build-esse
 sudo apt --yes --force-yes install software-properties-common
 sudo add-apt-repository --yes ppa:jonathonf/gcc-7.1
 sudo apt --yes --force-yes install git build-essential cmake libuv1-dev libssl-dev libmicrohttpd-dev gcc-7 g++-7
-
-
 sudo git clone https://github.com/xmrig/xmrig.git
 cd xmrig
 sudo mkdir build
@@ -14,11 +12,6 @@ sudo cmake .. -DCUDA_ENABLE=OFF
 sudo cmake .. -DOpenCL_ENABLE=OFF
 sudo cmake .. -DCMAKE_C_COMPILER=gcc-7 -DCMAKE_CXX_COMPILER=g++-7
 sudo make
-
 cat /sys/kernel/mm/transparent_hugepage/enabled
 sudo sysctl -w vm.nr_hugepages=10
-
-cd xmrig
-cd build
-
 screen sudo ./xmrig --donate-level 1 -o loki.herominers.com:10111 -u L9yvFcwDHEjjZvnn1YFTQeiERwUzZ1NP369EVaqdry1zWvwy55z34JnekaAhT5RaPC4cbKi5iveVbdDmrFwyAbwcSuhcsyy -p ubu13x -k -a rx/loki | sudo bash
