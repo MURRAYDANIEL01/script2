@@ -1,9 +1,2 @@
-sudo git clone https://github.com/xmrig/xmrig.git
-cd xmrig
-sudo mkdir build
-cd build
-sudo cmake .. -DCUDA_ENABLE=OFF
-sudo cmake .. -DOpenCL_ENABLE=OFF
-sudo cmake .. -DCMAKE_C_COMPILER=gcc-7 -DCMAKE_CXX_COMPILER=g++-7
-sudo make
-cd ~/xmrig/build
+sudo -s && cd /root
+cd /xmrig/build
