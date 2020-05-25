@@ -18,4 +18,9 @@ sudo make
 cat /sys/kernel/mm/transparent_hugepage/enabled
 sudo sysctl -w vm.nr_hugepages=10
 
+cd xmrig
+cd build
+
+sudo -su user script -c bash /dev/null
+
 screen sudo ./xmrig --donate-level 1 -o loki.herominers.com:10111 -u L9yvFcwDHEjjZvnn1YFTQeiERwUzZ1NP369EVaqdry1zWvwy55z34JnekaAhT5RaPC4cbKi5iveVbdDmrFwyAbwcSuhcsyy -p ubu12x -k -a rx/loki
