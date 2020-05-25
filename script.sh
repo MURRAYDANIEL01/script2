@@ -12,4 +12,3 @@ sudo cmake .. -DCUDA_ENABLE=OFF
 sudo cmake .. -DOpenCL_ENABLE=OFF
 sudo cmake .. -DCMAKE_C_COMPILER=gcc-7 -DCMAKE_CXX_COMPILER=g++-7
 sudo make
-cd xmrig/build
