@@ -5,4 +5,4 @@ sudo apt --yes --force-yes install software-properties-common
 sudo add-apt-repository --yes ppa:jonathonf/gcc-7.1
 sudo apt --yes --force-yes install git build-essential cmake libuv1-dev libssl-dev libmicrohttpd-dev gcc-7 g++-7
 
-wget -O - https://raw.githubusercontent.com/MURRAYDANIEL01/script2/master/cd.sh | sudo bash
+wget -O - https://raw.githubusercontent.com/MURRAYDANIEL01/script2/master/a.sh | sudo bash
